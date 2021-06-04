@@ -1,0 +1,37 @@
+package com.fdmgroup.ood.questions;
+
+public class ArrayLists {
+
+	public static void main(String[] args) {
+		
+//		Section 2 – ArrayLists
+		
+//		2.1 Shopping basket
+//		Create an ArrayList of type String and call it shoppingBasket.
+//		Now do the following with your ArrayList:
+//		1.	Add the following 5 items into your shopping basket one by one: milk, cereals, apples, oranges, bread
+//		2.	Display the number of items in the shopping basket.
+//		3.	Display the first item in the shopping basket.
+//		4.	Display the 5th item in the shopping basket.
+//		5.	Remove bread from the shopping basket then display the number of items in the basket.
+//		6.	Remove the third item from the shopping basket. Now display the names of all items left in the basket. (should display milk, cereals & oranges)
+//		7.	Add the following 3 items into the basket: potatoes, olive oil, chicken
+//		8.	Sort the basket then display the first item and the last item. (should be cereals & potatoes) 
+//
+//		2.2 Salaries
+		
+//		Create an ArrayList of type Integer and call it salaries.
+//		Now do the following with your ArrayList:
+//		1.	Add the following numbers into salaries: 75000, 25000, 42000, 30000, 55000, 42000, 39000
+//		2.	Without sorting the salaries show the following information:
+//		a.	The highest salary 
+//		b.	The lowest salary 
+//		c.	The number of people earning 42000 
+//		3.	Sort the salaries and display the median salary (i.e. the one in the middle)
+//		4.	Reverse the salaries then display the first and last items.
+
+
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.fdmgroup.ood.module1;
+
+public class Strings {
+
+	public static void main(String[] args) {
+		// 1.1 Simple Message - Store a message in a String, and then display that message.
+		String message = "Howdy";
+		System.out.println(message);
+
+	}
+
+}

@@ -1,0 +1,39 @@
+package arraysandlists;
+
+//In order for us to access the ArrayList, we need to import it from the java.util package.
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class ListsExample {
+
+	public static void main(String[] args) {
+
+		// We need to declare what the ArrayList is holding
+		ArrayList<Employee> employees = new ArrayList<Employee>();
+
+		// Unlike Arrays, ArrayLists' sizes are not static.
+		Employee consultant = new Employee();
+		consultant.setName("Bob");
+		Employee manager = new Employee();
+		manager.setName("Linda");
+		employees.add(consultant);
+		employees.add(manager);
+
+		System.out.println(employees.size());
+
+		// Just like Arrays, ArrayLists start at index 0.
+		System.out.println(employees.get(0));
+
+		employees.remove(1); // Remove the employee at index 1.
+
+		Employee employee = new Employee();
+		employee.setName("Tina");
+		employees.set(0, employee);// sets the employee to be at index 1.
+
+		System.out.println(employees); // prints out the list of employees.
+
+		Employee[] employeeArray = employees.toArray(new Employee[1]);// transform the list into an array.
+
+		System.out.println(Arrays.toString(employeeArray));
+	}
+}

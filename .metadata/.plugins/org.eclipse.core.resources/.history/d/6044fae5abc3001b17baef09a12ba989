@@ -1,0 +1,51 @@
+package com.fdmgroup.ood.examples.loops;
+
+public class MoreLoops {
+
+	public static void main(String[] args) {
+		System.out.println(sumRange(1, 10));
+		printMultiplicationTables(9);
+		multipleLoopTypes();
+	}
+	
+	public static void multipleLoopTypes() {
+		// using more than one variable in a loop
+		for(int i = 4, j = 1, k = 2; i > 3 && k < 10; i++, k++) {
+		j++;
+		System.out.println("i= " + i + " j=" + j + " k=" + k);
+		
+		}
+	}
+	public static void printMultiplicationTables(int number) {
+		System.out.println("Multiplication table " + number);
+		for (int counter = 1; counter <= 10; counter++) {
+			System.out.println(number + " x " + counter + " = " + (number * counter));
+		}
+	}
+	
+	public static int sumRange(int lowerbound, int upperbound) {
+		int sum = 0;
+		
+		// for loop from lower to upper bound
+		for (int i = lowerbound; i <= upperbound; i++) {
+			sum += i;	
+		}
+		
+		// while loop from lower to upper bound
+		int i = lowerbound;
+		while (i <= upperbound) {
+			sum += i;
+			i++;
+		}
+		
+		// do while
+		i = lowerbound;
+		do {
+			sum += i;
+			i++;
+		} while (i <= upperbound);
+		
+		return sum;
+	}
+	
+}

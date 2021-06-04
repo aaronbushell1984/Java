@@ -1,0 +1,18 @@
+package com.fdmgroup.ood.datatypes;
+
+public class DemoStrings {
+
+	public static void main(String[] args) {
+		String name = "Aaron";
+		String anotherName = "Aaron";
+		
+		// One piece of memory is created - Only the reference name changed=s
+		boolean isSameObject = name == anotherName;
+		System.out.println("References the same object -" + isSameObject);
+		
+		boolean isSameData = name.equals(anotherName);
+		System.out.println("Is same Data? " + isSameData);
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.fdmgroup.ood.examples.loops;
+
+public class MoreLoops {
+
+	public static void main(String[] args) {
+		System.out.println(sumRange(1, 10));
+
+	}
+	
+	public static int sumRange(int lowerbound, int upperbound) {
+		int sum = 0;
+		
+		// for loop from lower to upperbound
+		for (int i = lowerbound; i <= upperbound; i++) {
+			sum += i;	
+		}
+		return sum;
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.fdmgroup.ood.datatypes;
+
+public class DemoBook {
+
+	public static void main(String[] args) {
+		
+		Book myFirstBook = new Book();
+		
+		Book mySecondBook = new Book();
+		
+		System.out.println(myFirstBook);
+		System.out.println(mySecondBook);
+
+	}
+
+}

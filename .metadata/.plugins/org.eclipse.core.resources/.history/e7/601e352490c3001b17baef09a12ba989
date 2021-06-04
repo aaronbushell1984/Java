@@ -1,0 +1,45 @@
+package com.fdmgroup.ood.questions;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		
+//		Section 1 - Arrays
+		
+//		1.1 Friends array
+//		Create an array containing the names of your five best friends.
+		String[] bestFriends = {"Luke", "Jack", "Lee", "Malcolm", "Kris"};
+				
+//		Now do the following with your array:
+//		a.	Display the number of friends in the array.
+		int numberOfBestFriends = bestFriends.length;
+		System.out.println(numberOfBestFriends);
+		
+//		b.	Display each name in the array on a separate line.
+		for (String friend : bestFriends) {
+			System.out.println(friend);
+		}
+		
+//		c.	You’re no longer friends with the fifth person in the array. Replace their name with a new friend.
+		bestFriends[4] = "Bob";
+		System.out.println(Arrays.toString(bestFriends));
+		
+//		d.	Sort the array.
+//		e.	Display the first person in the array.
+//		f.	Display the last person in the array.
+//		g.	You’re no longer friends with the second person in the array. Remove their name from the array by replacing it with null. 
+//
+//		1.2 Poker Hand
+//		Create an empty array of Strings called pokerHand with 5 elements.
+//
+//		Now do the following with your array.
+//
+//		1.	Add the String “Queen of hearts” into the first position in your array.
+//		2.	Add the String “3 of spades” into the second position in your array.
+//		3.	Add the String “3 of diamonds” into the third position in your array.
+//		4.	Add the String “9 of hearts” into the fourth position in your array.
+//		5.	Add the String “6 of clubs” into the fifth position in your array.
+
+	}
+
+}

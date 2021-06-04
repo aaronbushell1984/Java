@@ -1,0 +1,15 @@
+package com.fdmgroup.ood.collections;
+
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+		// Empty Array
+		int[] intArray = new int[10];
+		int arrayLength = intArray.length;
+		
+		// Zero indexed ArrayIndexOutOfBoundException
+		intArray[10] = 10;
+
+	}
+
+}

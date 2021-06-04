@@ -1,0 +1,19 @@
+package com.fdmgroup.ood.datatypes;
+
+public class Book {
+	
+	String title;
+	double price;
+	
+	public String getDetails( ) {
+		return title + " " + price;
+	}
+
+	@Override
+	public String toString() {
+		return "Book [title=" + title + ", price=" + price + "]";
+	}
+	
+	
+
+}

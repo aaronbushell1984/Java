@@ -1,0 +1,14 @@
+package com.fdmgroup.ood.datatypes;
+
+public class DemoStrings {
+
+	public static void main(String[] args) {
+		String name = "Aaron";
+		String anotherName = "Aaron";
+		
+		boolean isSameObject = name == anotherName;
+		System.out.println("References the same object " + isSameObject);
+
+	}
+
+}

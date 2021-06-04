@@ -1,0 +1,49 @@
+package com.fdmgroup.ood.collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import com.fdmgroup.ood.datatypes.Book;
+
+public class ArrayListDemo {
+	
+	// List is Ordered, allows duplicate elements, allows null, not sorted - Fairly fast list
+	public static void main(String[] args) {
+		// Use type safety when type of array list is know - default is raw and will show error
+		// New object/ arraylist type declaration is inferred
+		ArrayList<String> listOfStrings = new ArrayList<>();
+		listOfStrings.add("First String");
+		listOfStrings.add("Second String");
+		listOfStrings.add("Third String");
+		
+		// null additions are allowed
+		listOfStrings.add(null);
+		
+		int index = 0;
+		System.out.println(listOfStrings.get(index));
+		index++;
+		listOfStrings.set(index, "A new string");
+		System.out.println(listOfStrings.get(index));
+		
+		for (String myString : listOfStrings) {
+			System.out.println(myString);
+		}
+		
+		Collections.reverse(listOfStrings);
+		System.out.println(listOfStrings);
+		listOfStrings.remove("Third string");
+		
+		// copying the book from book add import automatically		
+		Book myFirstBook = new Book("My First", 9.99);	
+		Book mySecondBook = new Book("My Second", 15.99);
+		// List needs importing
+		List<Book> myBooks = new ArrayList<>();
+		myBooks.add(myFirstBook);
+		myBooks.add(mySecondBook);
+		for (Book book : myBooks) {
+			System.out.println(book);
+		}
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.fdmgroup.ood.primitives;
+
+public class PrimitiveNumbers {
+
+	public static void main(String[] args) {
+		// Section 2 - Primitive Numbers
+		// 2.1 Favourite Number - Store your favourite number in an int. Then, using that variable, create a message that reveals your favourite number. Display that message.
+		int favouriteNumber = 7;
+		System.out.println("My favourite number is " + favouriteNumber);
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.fdmgroup.ood.datatypes;
+
+public class DemoPrimatives {
+
+	public static void main(String[] args) {
+		int intNumber = 0;
+		intNumber += 1;
+		System.out.println(intNumber);
+	}
+
+}

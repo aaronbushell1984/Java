@@ -1,0 +1,19 @@
+package com.fdmgroup.ood.datatypes;
+
+public class DemoPrimatives {
+
+	public static void main(String[] args) {
+		int intNumber = 0;
+		intNumber += 1;
+		System.out.println("intNumber equals " + intNumber);
+		
+		long longNumber = 12345678;
+		System.out.println("longNumber equals " + longNumber);
+		
+		System.out.println("Adding int and long  " + intNumber + longNumber);
+		long total = intNumber + longNumber;
+		System.out.println("Cast and then add numbers " + total);
+		
+	}
+
+}

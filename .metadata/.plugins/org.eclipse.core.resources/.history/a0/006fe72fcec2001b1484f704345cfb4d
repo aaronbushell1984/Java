@@ -1,0 +1,27 @@
+package com.fdmgroup.ood.datatypes;
+
+public class DemoPrimatives {
+
+	public static void main(String[] args) {
+		int intNumber = 0;
+		intNumber += 1;
+		System.out.println("intNumber equals " + intNumber);
+		
+		long longNumber = 12345678;
+		System.out.println("longNumber equals " + longNumber);
+		
+		// print treats variables as strings and adds strings not the number
+		System.out.println("Adding int and long  " + intNumber + longNumber);
+		// Either cast and add first or wrap to perform the arithmetic
+		long total = intNumber + longNumber;
+		System.out.println("Cast and then add numbers " + total);
+		System.out.println("Bracket int and long  " + (intNumber + longNumber));
+		
+		byte byteNumber = 127;
+		System.out.println("byteNumber " + byteNumber);
+		byteNumber += 1;
+		System.out.println("bytNumber rollover " + byteNumber);
+		
+	}
+
+}
