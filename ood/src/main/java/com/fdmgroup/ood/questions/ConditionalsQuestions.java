@@ -52,7 +52,7 @@ public class ConditionalsQuestions {
 //		DONE
 //
 //		1.4	Stages of life
-//		Write an if-else if-else statement that determines a person's stage of life. 
+//		Write an if-else if-else statement that determines a String stage of life. 
 //
 //		Set a value for the variable age, and then:
 		int age = -1;
@@ -192,8 +192,6 @@ public class ConditionalsQuestions {
 		} else {
 			System.out.println("not licenced to drive");
 		}
-
-
 	}
 
 }

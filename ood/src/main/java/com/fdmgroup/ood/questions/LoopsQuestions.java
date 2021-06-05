@@ -2,7 +2,7 @@ package com.fdmgroup.ood.questions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
+import java.util.Collections;
 
 public class LoopsQuestions {
 
@@ -141,30 +141,46 @@ public class LoopsQuestions {
 //
 //		2.6 Alternate letters
 //		Use a for loop to display every second letter of the alphabet starting from b.
-//
+		for (char alphabet = 'b'; alphabet <= 'z'; alphabet += 2) {
+			System.out.println(alphabet);
+		}
+		
 //		2.7 All times tables
 //		Use a for loop within a for loop to display all of the times tables from 2 to 12. The output should be in this format:
-//
 //
 //		2 times table:
 //
 //		1 x 2 = 2
 //		2 x 2 = 4
-//		……..
-//		……..
-//
+//	
 //		12 times table:
 //
 //		1 x 12 = 12
-//		……
 //		12 x 12 = 144
-//		 
+		for (int table = 2; table < 13; table++) {
+			System.out.println(table + " times table:" + "\n");
+			for (int times = 1; times < 13; times++) {
+				System.out.println(times + " x " + table + " = " + (times * table));
+			}
+			System.out.println("\n");
+		}
+		
 //		Section 3 - While Loops
 //		3.1 One million
 //		Use a while loop to display all the numbers up to 1 million.
+		int i = 1;
+		while (i < 1000001) {
+			System.out.println(i);
+			i++;
+		}
 //
 //		3.2 Letters of the alphabet
 //		Use a while loop to display the lower case letters of the alphabet from a to z.
+		char character = 'a';
+		while (character <= 'z') {
+			System.out.println(character);
+			character++;
+		}
 //
 //		3.3 Fibonacci sequence
 //		The Fibonacci sequence starts like this:
@@ -174,25 +190,50 @@ public class LoopsQuestions {
 //		The first number is 0, the second number is 1. After that each number is the sum of the two numbers before it.
 //
 //		Use a while loop to display all the Fibonacci numbers under 1000.
-//
-//		 
+		ArrayList<Integer> fibArray = new ArrayList<>();
+		fibArray.add(0);
+		fibArray.add(1);
+		int fibSum = 0;
+		int counter = 2;
+		while (fibSum < 1000) { 
+			fibArray.add(fibArray.get(counter-1) + fibArray.get(counter-2));
+			fibSum = Collections.max(fibArray);
+			System.out.println(fibSum);
+			counter++;
+		}
+
 //		Section 4 - Controlling a loop with an if statement
 //		4.1 Finding a city
 //		Create a String array called cities which contains the following cities:  Glasgow, London, Birmingham, Cardiff, Manchester, Newcastle
+		String[] cities = { "Glasgow", "London", "Birmingham", "Cardiff", "Manchester", "Newcastle" };
 //
 //		Write a loop which loops through the names until it finds a name starting with 'B'. At this point the loop should terminate.
-//
 //		For each city you should diplay the city name and the message 'match' or 'doesn't match'. The output should look like this:
 //
 //		Glasgow - doesn't match
 //		London - doesn't match
 //		Birmingham - match
 //
+		for (String city : cities) {
+			if (city.startsWith("B")) {
+				System.out.println(city + " - match");
+				break;
+			} else {
+				System.out.println(city + " - doesn't match");
+			}
+		}
 //
 //		4.2 First number over 100
 //		Create an int array called numbers which contains the following numbers: 6, 15, 75, 32, 89, 24, 103, 17, 5, 250, 63, 91.
+		int[] numbers = { 6, 15, 75, 32, 89, 24, 103, 17, 5, 250, 63, 91 };
 //
 //		Write a loop which searches through the array until it finds the first number over 100. It should display this number and then terminate.
+		for (int number : numbers) {
+			if (number > 100) {
+				System.out.println(number);
+				break;
+			}
+		}
 //
 //		In this example it should display 103.
 

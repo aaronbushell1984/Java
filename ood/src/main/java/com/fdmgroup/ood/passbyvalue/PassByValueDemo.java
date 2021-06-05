@@ -33,5 +33,7 @@ public class PassByValueDemo {
 		bikeone = biketwo;
 		biketwo = (Bike) temp;
 	}
+	
+	// references scoped but contents is changeable
 
 }
